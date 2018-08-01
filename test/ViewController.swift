@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var gatlinGunHealthDisplay: UILabel!
     @IBOutlet weak var sniperHealthDisplay: UILabel!
     var gatlinGunHealth = 200
-    var sniperHealth = 25
+    var sniperHealth = 20
     
     func refresh() {
         if (gatlinGunHealth <= 0) {
