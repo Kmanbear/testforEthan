@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func gatlinGunAttack(_ sender: UIButton) {
-        sniperHealth -= 2
+        sniperHealth -= 3
         refresh()
     }
     @IBAction func sniperAttack(_ sender: UIButton) {
