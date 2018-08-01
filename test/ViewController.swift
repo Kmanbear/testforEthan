@@ -26,20 +26,20 @@ class ViewController: UIViewController {
     
     func refresh() {
         if (gatlinGunHealth <= 0) {
-            gatlinGunHealthDisplay.text = "Health: 0"
+            gatlinGunHealthDisplay.text = "Health: 0. You Lost."
             gatlinGunImage.image = UIImage(named: "explosion.jpg")
         }else{
             gatlinGunHealthDisplay.text = "Health: \(gatlinGunHealth) "
         }
         if (sniperHealth <= 0){
-            sniperHealthDisplay.text = "Health: 0"
+            sniperHealthDisplay.text = "Health: 0. You Lost."
             sniperImage.image = UIImage(named: "explosion.jpg")
         }else{
-            sniperHealthDisplay.text = "Health: \(sniperHealth) "
+            sniperHealthDisplay.text = "Health: \(sniperHealth)"
         }
     }
     @IBAction func gatlinGunAttack(_ sender: UIButton) {
-        sniperHealth -= 2
+        sniperHealth -= 3
         refresh()
     }
     @IBAction func sniperAttack(_ sender: UIButton) {
